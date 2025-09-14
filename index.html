@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="format-detection" content="telephone=yes, address=no, email=no">
+    <title>AllState Limo - Luxury Transportation Services</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Places API for location autocomplete -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places&callback=initPlacesAutocomplete" async defer></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="1.png" alt="AllState Limo" class="logo">
+                <span class="logo-text"></span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#fleet" class="nav-link">Fleet</a></li>
+                <li><a href="#booking" class="nav-link">Booking</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <img src="herobg.png" alt="Luxury Limousine" class="hero-bg-image">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Luxury Transportation Redefined</h1>
+            <p class="hero-subtitle">Experience premium limousine and black car services with AllState Limo</p>
+            <div class="hero-buttons">
+                <a href="#booking" class="btn btn-primary">Book Now</a>
+                <a href="#fleet" class="btn btn-secondary">View Fleet</a>
+            </div>
+        </div>
+        <div class="hero-features">
+            <div class="feature">
+                <i class="fas fa-clock"></i>
+                <span>24/7 Service</span>
+            </div>
+            <div class="feature">
+                <i class="fas fa-shield-alt"></i>
+                <span>Licensed & Insured</span>
+            </div>
+            <div class="feature">
+                <i class="fas fa-star"></i>
+                <span>Premium Quality</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-background">
+            <img src="about-bg.jpg" alt="Luxury Transportation" class="about-bg-image">
+        </div>
+        <div class="about-overlay"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About AllState Limo</h2>
+                <p class="section-subtitle">Excellence in luxury transportation since our inception</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Your Premier Transportation Partner</h3>
+                    <p>AllState Limo has been setting the standard for luxury transportation services, providing unparalleled comfort, reliability, and sophistication. Our commitment to excellence ensures that every journey with us is an experience to remember.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h4>10,000+</h4>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat">
+                            <h4>15+</h4>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h4>50+</h4>
+                            <p>Luxury Vehicles</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-card">
+                        <img src="about-card.jpg" alt="Professional Chauffeur" class="about-card-image">
+                        <div class="about-card-overlay">
+                            <h4>Professional Service</h4>
+                            <p>Experienced chauffeurs ensuring your comfort and safety</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section id="fleet" class="fleet">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Luxury Fleet</h2>
+                <p class="section-subtitle">Choose from our collection of premium vehicles</p>
+            </div>
+            <div class="fleet-grid">
+                <div class="fleet-card">
+                    <div class="fleet-image">
+                        <img src="fleet-sedan2.png" alt="Executive Sedan" class="fleet-img">
+                    </div>
+                    <h3>Executive Sedans</h3>
+                    <p>Perfect for business meetings and airport transfers</p>
+                    <ul class="fleet-features">
+                        <li>Mercedes S-Class</li>
+                        <li>BMW 7 Series</li>
+                        <li>Audi A8</li>
+                    </ul>
+                    <div class="fleet-price">Starting at $75/hr</div>
+                </div>
+                <div class="fleet-card featured">
+                    <div class="fleet-image">
+                        <img src="fleet-stretch.png" alt="Stretch Limousine" class="fleet-img">
+                    </div>
+                    <h3>Stretch Limousines</h3>
+                    <p>Ideal for special occasions and group events</p>
+                    <ul class="fleet-features">
+                        <li>10-12 Passenger Capacity</li>
+                        <li>Premium Sound System</li>
+                        <li>Mini Bar & LED Lighting</li>
+                    </ul>
+                    <div class="fleet-price">Starting at $150/hr</div>
+                </div>
+                <div class="fleet-card">
+                    <div class="fleet-image">
+                        <img src="fleet-suv.png" alt="SUV Limousine" class="fleet-img">
+                    </div>
+                    <h3>SUV Limousines</h3>
+                    <p>Spacious luxury for larger groups</p>
+                    <ul class="fleet-features">
+                        <li>Escalade & Navigator</li>
+                        <li>14-20 Passenger Capacity</li>
+                        <li>Entertainment Systems</li>
+                    </ul>
+                    <div class="fleet-price">Starting at $200/hr</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking" class="booking">
+        <div class="booking-background">
+            <img src="booking-bg.png" alt="Luxury Stretch Limousine" class="booking-bg-image">
+        </div>
+        <div class="booking-overlay"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Book Your Ride</h2>
+                <p class="section-subtitle">Reserve your luxury transportation experience</p>
+            </div>
+            <div class="booking-content">
+                <form class="booking-form" id="bookingForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="pickup">Pickup Location</label>
+                            <input type="text" id="pickup" name="pickup" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="destination">Destination</label>
+                            <input type="text" id="destination" name="destination" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="vehicle">Vehicle Type</label>
+                            <select id="vehicle" name="vehicle" required>
+                                <option value="">Select Vehicle</option>
+                                <option value="sedan">Executive Sedan</option>
+                                <option value="stretch">Stretch Limousine</option>
+                                <option value="suv">SUV Limousine</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="passengers">Passengers</label>
+                            <select id="passengers" name="passengers" required>
+                                <option value="">Select</option>
+                                <option value="1-3">1-3 Passengers</option>
+                                <option value="4-8">4-8 Passengers</option>
+                                <option value="9-15">9-15 Passengers</option>
+                                <option value="16+">16+ Passengers</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Special Requests</label>
+                        <textarea id="notes" name="notes" rows="3" placeholder="Any special requirements or notes..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Request Quote</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-background">
+            <img src="contactus-bg.png" alt="Executive Sedan" class="contact-bg-image">
+        </div>
+        <div class="contact-overlay"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-subtitle">Get in touch for immediate assistance</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+1 401-442-1441</p>
+                            <p>Available 24/7</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>www.allstatelimori@gmail.com</p>
+                            <p>reservations@allstatelimo.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Luxury Drive</p>
+                            <p>Cranston, RI, United States, Rhode Island 02921</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="1.png" alt="AllState Limo" class="logo">
+                        <span class="logo-text">AllState Limo</span>
+                    </div>
+                    <p>Premium luxury transportation services for all your needs.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/AllStateTransportationllc"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Airport Transfers</a></li>
+                        <li><a href="#">Corporate Events</a></li>
+                        <li><a href="#">Wedding Transportation</a></li>
+                        <li><a href="#">Special Occasions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#fleet">Our Fleet</a></li>
+                        <li><a href="#booking">Book Now</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> +1 401-442-1441</p>
+                    <p><i class="fas fa-envelope"></i> allstatelimori@gmail.com</p>
+                    <p><i class="fas fa-clock"></i> 24/7 Service Available</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Cranston, RI, United States, Rhode Island 02921 </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AllState Limo. All rights reserved. | Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
